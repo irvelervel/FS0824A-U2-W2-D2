@@ -51,7 +51,9 @@ for (let i = 0; i < allThe4Buttons.length; i++) {
     ) {
       e.target.innerText = 'clicca per riapparire'
     } else {
-      e.target.innerText = e.target.getAttribute('id').slice(-1)
+      e.target.innerText = i + 1
+      // altrimenti recuperiamo il numero dall'id, ritagliando la stringa
+      // e.target.innerText = e.target.getAttribute('id').slice(-1)
       // l'id sarebbe "btn-1", faccio uno .slice(-1) --> "1" (prendo un carattere dalla fine)
     }
   })

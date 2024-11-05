@@ -10,6 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <header>
@@ -31,10 +35,14 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="bi bi-house-heart me-1"></i>Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Corsi</a>
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-book me-1"></i>Corsi</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -44,7 +52,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Docenti
+                  <i class="bi bi-file-earmark-person me-1"></i>Docenti
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Stefano</a></li>
@@ -55,7 +63,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true"
-                  >Lavora con noi</a
+                  ><i class="bi bi-hammer me-1"></i>Lavora con noi</a
                 >
               </li>
             </ul>
@@ -450,6 +458,50 @@
           </div>
         </div>
 
+        <!-- FORM -->
+        <div class="row justify-content-center mt-3">
+          <div class="col col-12 col-md-8 col-lg-6">
+            <h3 class="text-center">Registrati alla nostra newsletter!</h3>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+
         <!-- SINGOLA CARD -->
         <div class="row justify-content-center mt-3">
           <div class="col col-12 col-md-4 col-lg-3">
@@ -465,8 +517,50 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Adottalo!</a>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Adottalo!
+                </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODALE -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Modale a sorpresa!
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Save</button>
             </div>
           </div>
         </div>
