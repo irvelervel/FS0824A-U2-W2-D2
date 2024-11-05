@@ -73,7 +73,7 @@
           </div>
         </div>
       </nav>
-      <h1 class="text-center">Elementi di Bootstrap!</h1>
+      <h1 class="text-center my-3">Elementi di Bootstrap!</h1>
     </header>
     <main>
       <div class="container">
@@ -198,21 +198,258 @@
               role="group"
               aria-label="Basic outlined example"
             >
-              <button type="button" class="btn btn-outline-primary px-4">
+              <button
+                type="button"
+                id="btn-1"
+                class="btn btn-outline-primary px-4"
+              >
                 1
               </button>
-              <button type="button" class="btn btn-outline-primary px-4">
+              <button
+                type="button"
+                id="btn-2"
+                class="btn btn-outline-primary px-4"
+              >
                 2
               </button>
-              <button type="button" class="btn btn-outline-primary px-4">
+              <button
+                type="button"
+                id="btn-3"
+                class="btn btn-outline-primary px-4"
+              >
                 3
               </button>
-              <button type="button" class="btn btn-outline-primary px-4">
+              <button
+                type="button"
+                id="btn-4"
+                class="btn btn-outline-primary px-4"
+              >
                 4
               </button>
             </div>
           </div>
         </div>
+
+        <!-- 1 card su mobile, 2 card su md, 3 card su lg, 4 card su xl -->
+        <h3 class="text-center mt-3">
+          GRIGLIA DI CARDS CON CLASSI ASSEGNATE AD OGNI COLONNA
+        </h3>
+        <div class="row g-3">
+          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1 card su mobile, 2 card su md, 3 card su lg, 4 card su xl -->
+        <h3 class="text-center mt-3">
+          GRIGLIA DI CARDS CON CLASSI ASSEGNATE UNA VOLTA SOLA, ALLA RIGA
+        </h3>
+        <div
+          class="row g-3 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4"
+        >
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://placecats.com/400/400"
+                class="card-img-top"
+                alt="kitten"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un tenero gattino</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Adottalo!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- SINGOLA CARD -->
         <div class="row justify-content-center mt-3">
           <div class="col col-12 col-md-4 col-lg-3">
@@ -240,5 +477,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./script/index.js"></script>
   </body>
 </html>
